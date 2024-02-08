@@ -1,0 +1,94 @@
+.calendar-container {
+  border: 1px solid transparent;
+  border-color: #fff #ddd;
+  margin: 0 2em 2em
+}
+
+.contenedor-izquierda {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; // Alinea los elementos al inicio del contenedor (a la izquierda)
+  padding-left: 10px; // Espacio desde el borde izquierdo de la página
+  // Si es necesario que esté pegado a la parte superior de la página, puedes añadir:
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn-custom {
+  max-width: 3.125rem;
+  background-color: #7D8D00; // Color de fondo verde
+  color: white; // Color de texto
+  border: none; // Sin borde
+  padding: 10px; // Relleno para el botón
+  margin: 0 5px; // Margen entre los elementos
+  font-size: 16px; // Tamaño del texto
+  cursor: pointer; // Cambia el cursor a un puntero al pasar el mouse
+  border-radius: 5px; // Bordes redondeados
+
+  &:hover {
+    background-color: #7CA500; // Color al pasar el mouse
+  }
+
+  &.btn-izquierda {
+    // Estilos específicos para el botón izquierdo si es necesario
+  }
+
+  &.btn-derecha {
+    // Estilos específicos para el botón derecho si es necesario
+  }
+}
+
+
+
+
+.texto-hoy {
+  padding: 10px 20px; // Relleno alrededor del texto "Hoy"
+  border-bottom: #7CA500;
+  background-color: hwb(30 99% 0%); // Fondo verde para que coincida con los botones
+  color: #7CA500; // Color del texto
+  font-size: 16px; // Tamaño del texto
+  border-radius: 5px; // Bordes redondeados
+}
+
+.material-icons {
+  font-size: 18px; // Tamaño de los íconos de Material Icons
+}
+
+/* .button-main-content1235678{
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
+.button-main-content1235678{
+  width: 95vw;
+  background-color: #ff0040;
+  left: 100px;
+  margin-left: 100px;
+} */
+
+
+.col-md-4 {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  background-color: green($color: #3fbd82);
+}
+
+@media (max-width:600px) {
+  .contenedor-izquierda {
+    left: 76px;
+  }
+
+  .col-md-4 {
+    width: 0vw;
+    display: flex;
+    justify-content: flex-end;
+    background-color: green($color: #3fbd82);
+  }
+}
+
+
+div{
+  color: red;
+}
